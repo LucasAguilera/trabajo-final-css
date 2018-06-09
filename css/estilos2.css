@@ -1,0 +1,212 @@
+*{
+	margin:0;
+}
+@font-face{
+	font-family: 'DancingScript';
+	src:url(../font/DancingScript-Regular.otf);
+}
+body{
+	color: white;
+	font-family: 'DancingScript';
+	text-shadow: 2px 0 black;
+	background:  #02010a;
+	font-size: 20px;
+
+}
+#resaltar{
+	text-decoration: underline;
+	color: #B1D3F9;
+	text-shadow: 2px 0 black 
+
+}
+/*------------------------------Para Desktop--------------------------*/
+@media screen and (min-width:900px){
+
+header{
+	display: flex;
+	background-color: #43A3C3; 
+	width: 890px;
+	margin: 0 auto;	
+	border-radius: 10px 10px 0 0;
+	padding: 0 0 0 10px;
+
+
+}
+header h1{
+	display: block;
+	float: left;
+	text-shadow: 2px 0 black;
+	
+}
+
+header nav {
+	display: block;	
+	float: right;
+	margin-top: 2.5%;
+	margin-left: 20%;
+	
+}	 
+nav ul {
+    list-style-type: none;
+    
+}
+
+ nav ul li{
+ 	display: inline-block;
+
+ }
+ nav ul li a {
+ 	display: block;
+ 	padding-left: 3px;
+ 	font-size: 20px;
+ 	color: white;
+ 	margin-right: 5px;
+ 	text-decoration: none;
+ 	border-left: 1px solid white;
+
+ }
+ nav ul li a:hover{
+ 	text-decoration: inherit;
+ 	color: red;
+
+ }
+
+ #contenedor{
+ 	background-color: #d5c75f;
+ 	width: 900px;
+ 	margin: 0 auto;
+ 	display: flex;
+ 	flex-direction:row;
+ }
+ #contenedor .caja{
+ 	width: 100%;
+ 	margin: 3% 0 0 15%;
+
+ }
+ footer{
+ 	width: 900px;
+ 	margin:0 auto; 	
+ 	border-radius: 0 0 10px 10px;
+
+ }
+ #pie{
+ 	display: flex;
+ 	flex-direction: row;
+ 	background:  #C6d5c5;
+ }
+ .info{
+ 	display: block;
+ 	width: 20%;
+ 	height: 200px;
+ 	padding-left: 5%;
+ 	color: black;
+ 	text-shadow: 2px 0 white;
+
+ }
+ .info h2{
+ 	margin: 10px 0 10px;
+ 
+}
+}
+/*---------------------------------------------*/
+@media screen and (max-width:899px){ 
+
+header{
+	display: flex;
+	flex-direction: column;
+	background-color: #43A3C3; 
+	width: 100%;		
+	border-radius: 10px 10px 0 0;
+	padding: 0 0 0 10px;
+
+
+}
+header h1{
+	display: block;
+	float: left;
+	text-shadow: 2px 0 black;
+	
+}
+
+header nav {
+	display: block;
+	left:50px;
+	float: right;
+	margin-top: 20px;
+	
+}	 
+nav ul {
+    list-style-type: none;
+    
+}
+
+nav ul li{
+ 	display: inline-block;
+
+ }
+nav ul li a {
+ 	display: block;
+ 	font-size: 20px;
+ 	color: white;
+ 	margin-right: 5px;
+ 	
+ 	border-left: 1px solid white;
+ }
+ header nav ul li a:hover{
+ 	color: red;
+ }
+
+ #contenedor{
+ 	background-color: #d5c75f;
+ 	width: 100%;
+ 	
+ 	display: flex;
+ 	flex-direction:column;
+ }
+ #contenedor .caja{
+ 	width: 100%;
+ 	margin: 3% 0 0 15%;
+
+ }
+
+ #seccion1,#seccion2,#seccion3{
+
+ 	float: right;
+
+ }
+ footer{
+ 	width: 100%;
+ 	float: left;
+ 	
+ 	border-radius: 0 0 10px 10px;
+
+ }
+ #pie{
+ 	display: flex;
+ 	flex-direction: column;
+ 	background:  #C6d5c5;
+ }
+ .info{
+ 	display: block;
+ 	width: 100%;
+ 	height: 200px;
+ 	padding-left: 5%;
+ 	color: black;
+ 	text-shadow: 2px 0 white;
+
+ }
+ .info h2{
+ 	margin: 10px 0 10px;
+ }
+
+}
+#filtro1{
+	filter: blur(10px);
+
+}
+#filtro2,#filtro4,#filtro6{
+ 	filter: grayscale(100%);
+}
+#filtro3{
+	filter: sepia(90%);
+}
